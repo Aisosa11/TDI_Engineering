@@ -1,0 +1,9 @@
+sqlalchemy
+prefect
+requests
+python-decouple
+psycopg2
+pandas
+postgres
+datetime
+
