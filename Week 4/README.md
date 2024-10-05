@@ -1,5 +1,5 @@
 
-**DATA PIPELINES AND EXTRACTION FROM API USING PREFECT AND POSTGRESS**
+**DATA PIPELINES AND EXTRACTION FROM API USING PREFECT AND POSTGRES**
 
    In this project, after retrieving data using RapidAPI, data was saved into a dataframe, the data saved was cleaned and then 
    saved in different file formats. This saved data was also linked into a database(postgress to be precise), this was done with 
