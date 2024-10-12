@@ -1,0 +1,9 @@
+sqlalchemy
+python-decouple
+psycopg2
+pandas
+postgres
+datetime
+fastapi
+uvicorn
+Postman
