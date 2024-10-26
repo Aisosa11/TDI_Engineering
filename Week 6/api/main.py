@@ -2,11 +2,12 @@ from fastapi import FastAPI, HTTPException, Depends
 from pydantic import BaseModel
 from typing import List, Annotated
 import model
-from db import engine, sessionlocal
+from db import engine, SessionLocal
 from sqlalchemy.orm import Session
 from schema import NewPlayer
 import Crud
 from model import Tennis
+import uvicorn
 
 app = FastAPI()
 
@@ -14,7 +15,7 @@ app = FastAPI()
 
 
 def get_db():
-    db = sessionlocal()
+    db = SessionLocal()
     try:
         yield db
     finally:
@@ -47,3 +48,9 @@ async def get_update_stats(db:db_dependency,player:NewPlayer,tennis_id:int):
 async def delete_player_stats(db:db_dependency, tennis_id):
     result = Crud.remove_row(db, tennis_id)
     return result
+
+
+
+
+if __name__ == "__main__":
+  uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)

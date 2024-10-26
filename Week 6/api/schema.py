@@ -11,5 +11,3 @@ class NewPlayer(BaseModel):
     match_winner : int
     result : str
     addition : int
-
-

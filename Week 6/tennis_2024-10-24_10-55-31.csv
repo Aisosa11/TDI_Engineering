@@ -1,0 +1,11 @@
+,id,date,roundId,player1Id,player2Id,tournamentId,match_winner,result,player1,player2
+0,1104097,2024-07-29T00:00:00.000Z,5,5992,677,19400,5992,6-1 6-4,"{'id': 5992, 'name': 'Novak Djokovic', 'countryAcr': 'SRB'}","{'id': 677, 'name': 'Rafael Nadal', 'countryAcr': 'ESP'}"
+1,914315,2022-05-31T00:00:00.000Z,9,677,5992,17563,677,6-2 4-6 6-2 7-6(4),"{'id': 677, 'name': 'Rafael Nadal', 'countryAcr': 'ESP'}","{'id': 5992, 'name': 'Novak Djokovic', 'countryAcr': 'SRB'}"
+2,867047,2021-06-11T00:00:00.000Z,10,5992,677,16911,5992,3-6 6-3 7-6(4) 6-2,"{'id': 5992, 'name': 'Novak Djokovic', 'countryAcr': 'SRB'}","{'id': 677, 'name': 'Rafael Nadal', 'countryAcr': 'ESP'}"
+3,866832,2021-05-16T00:00:00.000Z,12,677,5992,16908,677,7-5 1-6 6-3,"{'id': 677, 'name': 'Rafael Nadal', 'countryAcr': 'ESP'}","{'id': 5992, 'name': 'Novak Djokovic', 'countryAcr': 'SRB'}"
+4,842742,2020-10-11T00:00:00.000Z,12,677,5992,16462,677,6-0 6-2 7-5,"{'id': 677, 'name': 'Rafael Nadal', 'countryAcr': 'ESP'}","{'id': 5992, 'name': 'Novak Djokovic', 'countryAcr': 'SRB'}"
+5,841260,2020-01-12T00:00:00.000Z,12,5992,677,16431,5992,6-2 7-6(4),"{'id': 5992, 'name': 'Novak Djokovic', 'countryAcr': 'SRB'}","{'id': 677, 'name': 'Rafael Nadal', 'countryAcr': 'ESP'}"
+6,789522,2019-05-19T00:00:00.000Z,12,677,5992,15630,677,6-0 4-6 6-1,"{'id': 677, 'name': 'Rafael Nadal', 'countryAcr': 'ESP'}","{'id': 5992, 'name': 'Novak Djokovic', 'countryAcr': 'SRB'}"
+7,787591,2019-01-27T00:00:00.000Z,12,5992,677,15606,5992,6-3 6-2 6-3,"{'id': 5992, 'name': 'Novak Djokovic', 'countryAcr': 'SRB'}","{'id': 677, 'name': 'Rafael Nadal', 'countryAcr': 'ESP'}"
+8,722754,2018-07-14T00:00:00.000Z,10,5992,677,14741,5992,6-4 3-6 7-6(9) 3-6 10-8,"{'id': 5992, 'name': 'Novak Djokovic', 'countryAcr': 'SRB'}","{'id': 677, 'name': 'Rafael Nadal', 'countryAcr': 'ESP'}"
+9,721860,2018-05-19T00:00:00.000Z,10,677,5992,14730,677,7-6(4) 6-3,"{'id': 677, 'name': 'Rafael Nadal', 'countryAcr': 'ESP'}","{'id': 5992, 'name': 'Novak Djokovic', 'countryAcr': 'SRB'}"

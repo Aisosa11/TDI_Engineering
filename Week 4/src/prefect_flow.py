@@ -52,13 +52,15 @@ def fetch_and_save_to():
 
     @task
     def process_data(data):
+        print(data[0])
         df2 = pd.json_normalize(data['player'])
         data = data.drop(['player', 'wk'], axis='columns')
         df2.columns = df2.columns.str.replace(".", "_")
         transformed_data = pd.concat([data, df2], axis=1)
         return transformed_data
 
-    @task(docstring="Saves DataFrame to CSV and Parquet files in specified folder")
+
+    @task(name="Saves DataFrame to CSV and Parquet files in specified folder")
     def save_to(data:pd.DataFrame, folder = "datalake"):
         timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
         try:
@@ -83,29 +85,19 @@ def fetch_and_save_to():
 
 
 if __name__ == "__main__":
+    fetch_and_save_to()
     # Schedule the flow to run every 33 minutes (adjust as needed)
-     fetch_and_save_to.serve(schedule = [
-     IntervalSchedule(
-       interval=timedelta(seconds=1000),
-        anchor_date=datetime(2024, 10, 5),
-        timezone="America/Chicago"
-        )
-    ]
-    )
+    # fetch_and_save_to.serve(schedule = [
+    #IntervalSchedule(
+    #   interval=timedelta(seconds=1000),
+    #    anchor_date=datetime(2024, 10, 5),
+    #    timezone="America/Chicago"
+#        )
+ #   ]
+  #  )
+
 #    fetch_and_save_to.serve(schedules=[schedule])
-
-"""
-if __name__ == "__main__":
-    # Schedule the flow to run every 60 seconds (1 minute)
-    schedule =IntervalSchedule(
-        interval=timedelta(seconds=2000),
-        anchor_date=datetime(2024, 10, 5),  # Initial run on October 5, 2024
-        timezone="America/Chicago"
-    )
-
-    fetch_and_save_to.serve(schedules=[schedule])
 
 
 #if __name__ == "__main__":
 #fetch_and_save_to()
-"""

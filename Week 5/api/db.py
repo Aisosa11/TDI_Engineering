@@ -10,7 +10,7 @@ user = config("user")
 passwd = config("passwd")
 host = config("host")
 port = config("port")
-db = "Tennis"
+db = config("db")
 
 conn = psycopg2.connect(
     host=host,
@@ -24,7 +24,7 @@ engine = create_engine(f'postgresql+psycopg2://{user}:{passwd}@{host}:{port}/{db
 
 sessionlocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
-TennisBase = declarative_base
+TennisBase = declarative_base()
 
 print('connected')
 

@@ -16,7 +16,7 @@ def request_url(url,headers):
 def transform_data(df_data):
    return pd.DataFrame(df_data['data'])
 
-def save_to(data:pd.DataFrame, folder = "datalake"):
+def save_to(data:pd.DataFrame, folder = r"C:\Users\HP\Documents\Python\TDI\Week 4\datalake"):
   try:
      data = pd.DataFrame(data)
      timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
